@@ -2,10 +2,10 @@
 group project for csit128 spring '26 <br/>
 Student Names & IDs:
 
-#Overview
+# Overview
 - A company web app made for a cafe.
 
-#Features
+# Features
 - Home page
 - Navigation bar
 - Menu page
