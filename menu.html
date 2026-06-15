@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu – Brew & Study</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="menu.css" />
+</head>
+<body>
+
+  <!-- navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-mark">B&S</span>
+        <span class="logo-text">Brew <span class="amp">&</span> Study</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="menu.html" class="nav-link active">Menu</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="staff.html" class="nav-link">Staff</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!--page header-->
+  <header class="page-header">
+    <h1>Menu</h1>
+    <p>Snacks and drinks curated specially for early lectures and late night study sessions.</p>
+  </header>
+
+  <!--filter bar-->
+  <section class="filter-bar">
+    <div class="container filter-inner">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="coffee">Coffee</button>
+      <button class="filter-btn" data-filter="tea">Tea</button>
+      <button class="filter-btn" data-filter="snacks">Snacks</button>
+    </div>
+  </section>
+
+  <!--menu grid -->
+  <section class="section menu-section">
+    <div class="container">
+      <div class="menu-grid" id="menuGrid">
+
+        <article class="menu-card" data-category="coffee">
+          <img src="pistachio_latte.jpg" alt="Pistachio Latte" class="menu-img">
+          <div class="menu-card-body">
+            <span class="menu-tag">Coffee</span>
+            <h4>Pistachio Latte</h4>
+            <p>Ristretto, oat milk, housemade pistachio butter, sea salt flake.</p>
+            <span class="menu-price">AED 12</span>
+          </div>
+        </article>
+
+        <article class="menu-card" data-category="coffee">
+          <img src="espresso.jpg" alt="Espresso" class="menu-img">
+          <div class="menu-card-body">
+            <span class="menu-tag">Coffee</span>
+            <h4>Espresso</h4>
+            <p>Single-origin Ethiopian beans, roasted weekly in-house.</p>
+            <span class="menu-price">AED 12</span>
+          </div>
+        </article>
+
+        <article class="menu-card" data-category="coffee">
+          <img src="cardcoldbrew.jpg" alt="Cardamom Cold Brew" class="menu-img">
+          <div class="menu-card-body">
+            <span class="menu-tag">Coffee</span>
+            <h4>Cardamom Cold Brew</h4>
+            <p>Slow-steeped 18 hours, finished with a hint of cardamom.</p>
+            <span class="menu-price">AED 12</span>
+          </div>
+        </article>
+
+        <article class="menu-card" data-category="coffee">
+          <img src="cappu.jpg" alt="Cappuccino" class="menu-img">
+          <div class="menu-card-body">
+            <span class="menu-tag">Coffee</span>
+            <h4>Cappuccino</h4>
+            <p>Equal parts espresso, steamed milk, and silky microfoam.</p>
+            <span class="menu-price">AED 11</span>
+          </div>
+        </article>
+
+        <article class="menu-card" data-category="tea">
+          <img src="karak_matcha.jpg" alt="Karak Matcha" class="menu-img">
+          <div class="menu-card-body">
+            <span class="menu-tag">Tea</span>
+            <h4>Karak Matcha</h4>
+            <p>Ceremonial grade matcha meets Gulf karak spices, steamed evaporated milk.</p>
+            <span class="menu-price">AED 15</span>
+          </div>
+        </article>
+
+        <article class="menu-card" data-category="tea">
+          <img src="mint_green.jpg" alt="Mint Green Tea" class="menu-img">
+          <div class="menu-card-body">
+            <span class="menu-tag">Tea</span>
+            <h4>Mint Green Tea</h4>
+            <p>Fresh mint leaves steeped with light green tea, served warm or iced.</p>
+            <span class="menu-price">AED 11</span>
+          </div>
+        </article>
+
+        <article class="menu-card" data-category="tea">
+          <img src="chai_latte.jpg" alt="Chai Latte" class="menu-img">
+          <div class="menu-card-body">
+            <span class="menu-tag">Tea</span>
+            <h4>Chai Latte</h4>
+            <p>Black tea infused with warming spices and steamed milk.</p>
+            <span class="menu-price">AED 13</span>
+          </div>
+        </article>
+
+        <article class="menu-card" data-category="snacks">
+          <img src="zaatar_croissants.jpg" alt="Zaatar Croissant" class="menu-img">
+          <div class="menu-card-body">
+            <span class="menu-tag">Snack</span>
+            <h4>Za'atar Croissant</h4>
+            <p>Butter croissant, whipped labneh, za'atar, pomegranate drizzle.</p>
+            <span class="menu-price">AED 9</span>
+          </div>
+        </article>
+
+        <article class="menu-card" data-category="snacks">
+          <img src="walnut_bnna_.jpg" alt="Banana Walnut Loaf" class="menu-img">
+          <div class="menu-card-body">
+            <span class="menu-tag">Snack</span>
+            <h4>Banana Walnut Loaf</h4>
+            <p>Moist house-baked loaf with toasted walnuts.</p>
+            <span class="menu-price">AED 12</span>
+          </div>
+        </article>
+
+        <article class="menu-card" data-category="snacks">
+          <img src="black_sesame_bagel.jpg" alt="Black Sesame Bagel" class="menu-img">
+          <div class="menu-card-body">
+            <span class="menu-tag">Snack</span>
+            <h4>Black Sesame Bagel</h4>
+            <p>Toasted bagel coated with nutty black sesame seeds.</p>
+            <span class="menu-price">AED 10</span>
+          </div>
+        </article>
+
+      </div>
+
+      <p class="no-results" id="noResults">No items found in this category.</p>
+    </div>
+  </section>
+
+  <!-- footer-->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo-mark small">B&S</span>
+        <span class="footer-tagline">Brew &amp; Study · Dubai Knowledge Park</span>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">About</a>
+        <a href="staff.html">Staff</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <p class="footer-copy">© 2024 Brew &amp; Study. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+  <script src="menu.js"></script>
+</body>
+</html>
